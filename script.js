@@ -23,7 +23,7 @@ document.querySelector('.check')
 
         if (score > highScore){
             highScore = score;
-            document.querySelector('.highScore').textContent = highScore;
+            document.querySelector('.highscore').textContent = highScore;
         }
     }
     //miss
@@ -51,7 +51,7 @@ document.querySelector('.again')
     document.querySelector('.question').textContent = '???'
     document.querySelector('.question').style.width = '25rem';
     document.querySelector('.guess-message').textContent = 'Начни угадывать'; 
-    document.querySelector('.score').textContent = score;
+    document.querySelector('.score').textContent = '20';
     document.querySelector('body').style.backgroundColor = 'rgb(0, 0, 0)';
     document.querySelector('.number-input').value = '';
     secretNumber = Math.trunc(Math.random() * 20) + 1;
